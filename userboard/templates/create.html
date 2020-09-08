@@ -9,12 +9,12 @@
   <div class="container">
     <h1>New post</h1>
     <br>
-    <form method="POST" class="post-form" enctype="multipart/form-data">
+    <form method="POST" class="post-form" >
          {% csrf_token%}
       <h3>Title</h3>
       <input type="text" name="title" />
       <h3>Content</h3>
-      <textarea cols="50" rows="15" name="content"></textarea>
+      <textarea cols="50" rows="30" name="content"></textarea>
       <input type="submit" value="Save" />
     </form>
 </div>
